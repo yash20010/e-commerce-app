@@ -89,6 +89,7 @@ const Button = styled.button`
   background-color: white;
   cursor: pointer;
   font-weight: 500;
+  text-transform: Uppercase;
 
   &:hover {
     background-color: #f8f4f4;
