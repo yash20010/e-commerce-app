@@ -6,9 +6,11 @@ import PinterestIcon from '@mui/icons-material/Pinterest'
 import RoomIcon from '@mui/icons-material/Room'
 import PhoneIcon from '@mui/icons-material/Phone'
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined'
+import { mobile } from '../responsive'
 
 const Container = styled.div`
   display: flex;
+  ${mobile({ flexDirection: 'column' })}
 `
 const Left = styled.div`
   flex: 1;
@@ -23,6 +25,7 @@ const Desc = styled.p`
 `
 const SocialContainer = styled.div`
   display: flex;
+  ${mobile({ justifyContent: 'space-between' })}
 `
 const SocialIcon = styled.div`
   width: 40px;
@@ -39,6 +42,7 @@ const SocialIcon = styled.div`
 const Center = styled.div`
   flex: 1;
   padding: 20px;
+  ${mobile({ display: 'none' })}
 `
 const Title = styled.h3`
   margin-bottom: 20px;
@@ -58,8 +62,8 @@ const ListItem = styled.li`
 
 const Right = styled.div`
   flex: 1;
-
   padding: 20px;
+  ${mobile({ backgroundColor: '#fff8ff' })}
 `
 
 const ContactItem = styled.div`
