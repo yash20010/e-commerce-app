@@ -112,7 +112,7 @@ const Product = () => {
   const [color, setColor] = useState('')
   const [size, setSize] = useState('')
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     const getProduct = async () => {
       try {
         const res = await publicRequest.get(`/products/find/${id}`)
@@ -131,6 +131,8 @@ const Product = () => {
       setQuantity(quantity + 1)
     }
   }
+
+  const handleClick = async () => {}
 
   return (
     <Container>
@@ -166,7 +168,7 @@ const Product = () => {
               <Amount>{quantity}</Amount>
               <AddIcon onClick={() => handleQuantity('inc')} />
             </AmountContainer>
-            <Button>Add To Cart</Button>
+            <Button onClick={handleClick}>Add To Cart</Button>
           </AddContainer>
         </InfoContainer>
       </Wrapper>
