@@ -7,7 +7,7 @@ import AddIcon from '@mui/icons-material/Add'
 import RemoveIcon from '@mui/icons-material/Remove'
 import { mobile } from '../responsive'
 import { useParams } from 'react-router-dom'
-import { useEffect, useState, useLayoutEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { publicRequest } from '../requestMethods'
 
 const Container = styled.div``
