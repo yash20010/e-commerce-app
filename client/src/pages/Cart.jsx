@@ -161,7 +161,9 @@ const Cart = () => {
             products: cart,
           },
         })
-      } catch {}
+      } catch (err) {
+        console.log(err)
+      }
     }
     stripeToken && makeRequest()
   }, [stripeToken, cart, navigate])
